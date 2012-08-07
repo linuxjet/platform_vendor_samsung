@@ -20,9 +20,6 @@ PRODUCT_COPY_FILES := \
 
 # All the blobs necessary for toro
 PRODUCT_COPY_FILES += \
-    vendor/samsung/toro/proprietary/fRom:system/bin/fRom \
-    vendor/samsung/toro/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/toro/proprietary/lib_gsd4t.so:system/lib/lib_gsd4t.so \
     vendor/samsung/toro/proprietary/pvrsrvctl:system/vendor/bin/pvrsrvctl \
     vendor/samsung/toro/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
     vendor/samsung/toro/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
@@ -39,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
     vendor/samsung/toro/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/toro/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
-    vendor/samsung/toro/proprietary/libsec-ril_lte.so:system/vendor/lib/libsec-ril_lte.so \
     vendor/samsung/toro/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
     vendor/samsung/toro/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/samsung/toro/proprietary/libusc.so:system/vendor/lib/libusc.so \
@@ -49,7 +45,18 @@ PRODUCT_COPY_FILES += \
 
 # All the apks necessary for toro
 PRODUCT_PACKAGES += \
+    BIP \
+    IMSFramework \
     RTN \
+    SyncMLSvc \
+    fRom \
+    libsecril-client \
+    libsyncml_core \
+    libsyncml_port \
+    lib_gsd4t \
+    libims \
+    libims_jni \
+    libsec-ril_lte \
     VZWAPNLib \
     VZWAPNService
 
